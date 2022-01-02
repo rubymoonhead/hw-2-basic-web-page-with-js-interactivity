@@ -1,0 +1,73 @@
+body {
+	font-family: 'DotGothic16', sans-serif;
+  color: #521262;
+  text-align: center;
+  margin-top:50px;
+	background-color: #6fe7dd
+}
+
+header {
+	margin: 25px;
+}
+
+fieldset {
+	border: dotted #3490de;
+	border-radius: 10px;
+	margin-left: 550px;
+	margin-right: 550px;
+}
+
+h1 {
+	text-align:center;
+  margin-top:50px;
+  padding:0px;
+  text-shadow: 1px 1px 2px #6639a6;
+}
+
+img {
+	margin: 25px;
+}
+
+label {
+	display: inline-block;
+  width: 220px;
+	text-align: right; 
+}
+
+input[type="text"] {
+	width: 175px;
+  padding: 0 20px;
+}
+
+input[type="submit"] {
+	color: #6fe7dd;
+	background-color: #3490de;
+	cursor: pointer;
+}
+
+input:hover {
+  background-color: #6639a6;
+  color: #6fe7dd;
+}
+
+.button-pill {
+	border: none;
+	padding: 10px 24px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px 0 #6639a6, 0 3px 10px 0 #6639a6;
+	font-family: 'DotGothic16', sans-serif;
+	font-size: 16px;
+}
+
+footer {
+	text-align: center;
+	font-size: 15px;
+	background-color: #6639a6;
+	padding: 1%;
+	color: #6fe7dd;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+

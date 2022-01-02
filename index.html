@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HW 2 Basic Web Page w. Interactivity</title>
+	<link href="mystyle.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<header>
+
+		<h1>A simple calculator...</h1>
+		<p>but you <strong>must enter the text value</strong> of the numbers representing 0 to 50</p>
+
+	</header>
+
+	<!--create a simple calculator (with a twist)
+			The twist: They should be able to enter in the words for their numbers e.g. one, fifteen, thirty-seven, forty-three, etc... Up to fifty.
+			Note that the word representation of the number should also include hyphen  where there would be a space e.g. twenty two should be entered in as twenty-two. This will keep things more uniform.-->
+
+    <form name="myform" onsubmit="validateNum();return false" method="post">
+
+		<img src="calc.gif" alt="calculator gif" width="200" height="150">
+
+			<fieldset>
+				<!--enter first number-->
+      <p><label>Enter your first number: </label><input type="text" name="firstNum" id="firstNum" placeholder="any number from one to fifty"></p>
+
+			<p><label>Select arithmetic operator: </label>
+				<select name="arithOperator" id="arithOperator">
+          <option value="add">+</option>
+					<option value="divide">/</option>
+					<option value="multiply">*</option>
+					<option value="subtract">-</option>
+        </select>
+
+      <p><label>Enter your second number: </label><input type="text" name="secondNum" id="secondNum" placeholder="any number from one to fifty"></p>
+
+			<p><input type="submit" name="submit" value="Calculate!" class="button-pill"></p>
+      
+    </form>
+    	
+			<p id="math"></p>
+
+			</fieldset>
+
+    <footer>
+		&copy15 March 2021 Raya Bergin COSW 230 LBCC
+		</footer>
+		
+		<script src="script.js"></script>
+		
+  </body>
+
+</html>
